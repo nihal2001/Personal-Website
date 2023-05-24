@@ -17,6 +17,7 @@
 .header h1 {
     font-size: 2em;
     text-align: right;
+    font-weight: 300;
 }
 
 .header ul {
