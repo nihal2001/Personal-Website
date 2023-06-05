@@ -82,7 +82,7 @@ p {
 
 .project-card:hover {
     transform: scale(1.025); 
-    background-color: #ed4343; 
+    background-color: #e34b4b; 
 }
 
 .project-card img{

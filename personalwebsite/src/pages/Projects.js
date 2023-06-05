@@ -1,6 +1,7 @@
 import React from 'react';
 import './Pages.css';
 import graph from '../images/project-graph.png';
+import webarchive from '../images/project-webarchive.png';
 
 
 const Projects = () => {
@@ -14,10 +15,11 @@ const Projects = () => {
                 </div>
             </div>
             <div className="project-card">
-                
-                <h2>Project 2</h2>
-                <p>This is a summary of project 2.</p>
-                
+                <img className="project-image" src={webarchive} alt="Webarchive UI" />   
+                <div className="text-container">
+                    <h2>Web Archiver</h2>
+                    <p>Archived lists of websites with the ability to record and replay them back.</p>
+                </div>
             </div>
         </div>
     );
