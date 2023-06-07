@@ -15,11 +15,12 @@ const ContactForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const url = "https://inqx7quii8.execute-api.us-east-1.amazonaws.com/SendMailAPI_ALPHA"; // Replace with your API Gateway URL
+            const url = "https://inqx7quii8.execute-api.us-east-1.amazonaws.com/SendMailAPI_ALPHA";
             const response = await fetch(url, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify(formData)
+                // Double-stringify the formData content
+                body: JSON.stringify({ body: JSON.stringify(formData) })
             });
     
             if (response.ok) {
@@ -38,6 +39,7 @@ const ContactForm = () => {
             alert("There was a problem with your request");
         }
     };
+    
 
     return (
         <form onSubmit={handleSubmit}>
