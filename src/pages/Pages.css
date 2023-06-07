@@ -50,6 +50,21 @@
     color: aliceblue;
 }
 
+.about-container .social-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-container .social-icons a {
+    margin-left: 10px; /* Adjust as needed */
+    margin-right: 10px; /* Adjust as needed */
+    color: aliceblue;
+}
+
+.about-container .social-icons a:hover{
+    color: rgb(217, 41, 21);
+}
 
 .about-image {
     margin-top: 0;

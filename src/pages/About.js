@@ -1,7 +1,7 @@
 import React from 'react';
 import './Pages.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
-
 
 const About = () => (
     <div className="about-container">
@@ -20,6 +20,20 @@ const About = () => (
 
             I'm excited to embark on this journey in the world of Computer Science and look forward to making valuable connections along the way
         </p>
+        <div className="social-icons">
+            <a href="https://github.com/nihal2001" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faGithub} size="2x" />
+            </a>
+            <a href="https://www.linkedin.com/in/nihal-mitta/" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faLinkedin} size="2x" />
+            </a>
+            <a href="https://instagram.com/nihalmitta" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faInstagram} size="2x" />
+            </a>
+            <a href="https://youtube.com/channel/nihalmitta" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faYoutube} size="2x" />
+            </a>
+        </div>
     </div>
 );
  
