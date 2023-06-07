@@ -97,7 +97,7 @@ p {
 
 .project-card:hover {
     transform: scale(1.025); 
-    background-color: #e34b4b; 
+    background-color: #38d4da; 
 }
 
 .project-card img{
@@ -121,3 +121,25 @@ p {
     align-self: start;
     align-items: center;
 }
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.contact-text {
+    flex: 1;
+    font-size: 4rem;
+    display: flex;
+    align-items:center; /* This will center the text vertically */
+    justify-content:right; /* This will center the text horizontally */
+    text-align: right;
+    color: rgb(185, 201, 78);
+}
+
+.contact-form {
+    flex: 1; /* This will make the form div take up the other half of the width of the container */
+}
+
