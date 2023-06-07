@@ -1,5 +1,6 @@
 import React from 'react';
 import './Pages.css';
+import { faGithub, faLinkedin, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
 
 const About = () => (

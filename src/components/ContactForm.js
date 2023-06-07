@@ -24,6 +24,12 @@ const ContactForm = () => {
     
             if (response.ok) {
                 alert("Email sent successfully");
+                // Reset the form fields
+                setFormData({
+                    name: '',
+                    subject: '',
+                    message: ''
+                });
             } else {
                 alert("Error sending email");
             }
@@ -32,21 +38,20 @@ const ContactForm = () => {
             alert("There was a problem with your request");
         }
     };
-    
 
     return (
         <form onSubmit={handleSubmit}>
             <label>
                 Name:
-                <input type="text" name="name" onChange={handleChange} />
+                <input type="text" name="name" value={formData.name} onChange={handleChange} />
             </label>
             <label>
                 Subject:
-                <input type="text" name="subject" onChange={handleChange} />
+                <input type="text" name="subject" value={formData.subject} onChange={handleChange} />
             </label>
             <label>
                 Message:
-                <textarea name="message" onChange={handleChange} />
+                <textarea name="message" value={formData.message} onChange={handleChange} />
             </label>
             <button type="submit">Submit</button>
         </form>
