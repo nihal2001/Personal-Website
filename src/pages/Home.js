@@ -1,6 +1,6 @@
 import React from 'react';
-import './Pages.css';
-import skiingImage from '../images/home-photo.PNG';
+import './Home.css';
+import skiingImage from '../images/home-photo.jpeg';
 
 const Home = () => (
     <div className="home">

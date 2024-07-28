@@ -1,0 +1,70 @@
+/* General header styles */
+.header {
+    background-color: #f0f0f0; /* Adjust background color as needed */
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed; /* Fix header to the top */
+    width: 100%;
+    top: 0;
+    z-index: 100; /* Ensure header stays on top of other content */
+  }
+  
+  /* Header sections */
+  .header-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header ul {
+    display: flex;
+    gap: 30px;
+    justify-content: center; 
+    list-style-type: none; /* Remove bullet points */
+    padding-left: 0;
+}
+  
+  .header-section li {
+    margin-right: 15px;
+  }
+  
+  .header-section a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Social icons */
+  .header-section a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 10px;
+  }
+  
+  .header-section a:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .header-section {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .header-section ul {
+      margin-top: 10px;
+    }
+  }
+  

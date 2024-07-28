@@ -21,13 +21,15 @@
 }
 
 .home-image {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    height: 75%;
-    transform: translateX(-5%);
-    
+    position: absolute;    /* Position it absolutely within its parent */
+    right: 0;               /* Align to the left edge */
+    top: 50%;              /* Start at the middle of the page vertically */
+    transform: translateY(50%); /* Shift it up by half its own height to center */
+    max-width: 100%;       /* Ensure it does not exceed the width of its container */
+    height: auto;          /* Maintain aspect ratio */
 }
+
+
 
 .about-container h1 {
     text-align: center;
